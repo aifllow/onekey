@@ -15,13 +15,13 @@ RUN VERSION=${version} PLUGINS=${plugins} ENABLE_TELEMETRY=false /bin/sh /usr/bi
 #
 FROM alpine:3.8
 # process wrapper
-LABEL maintainer "sebs sebsclub@outlook.com"
+LABEL maintainer "kjg5 info@kjg5.com"
 
 # V2RAY
 ARG TZ="Asia/Shanghai"
 
 ENV TZ ${TZ}
-ENV V2RAY_VERSION v4.19.1 
+ENV V2RAY_VERSION v4.20.0
 ENV V2RAY_LOG_DIR /var/log/v2ray
 ENV V2RAY_CONFIG_DIR /etc/v2ray/
 ENV V2RAY_DOWNLOAD_URL https://github.com/v2ray/v2ray-core/releases/download/${V2RAY_VERSION}/v2ray-linux-64.zip
